@@ -19,7 +19,7 @@ module.exports = function () {
             return cb();
         }
 
-        var pofile = po.parse(f.contents.toString()),
+        var pofile = po.parse(f.contents.toString('utf-8')),
             res = {},
             dic = {},
             i,
