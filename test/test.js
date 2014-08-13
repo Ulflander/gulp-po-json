@@ -15,7 +15,7 @@ describe('gulp-po-json', function() {
         var stream = pojson();
 
         stream.on('data', function(newFile) {
-            var res = JSON.parse(newFile, 'utf-8');
+            var res = JSON.parse(newFile.contents, 'utf-8');
             res.should.have.property('meta');
             res.should.have.property('dic');
             res.dic.should.have.property('Credits', 'Crédits');

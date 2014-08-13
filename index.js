@@ -37,7 +37,9 @@ module.exports = function () {
         for (i = 0, l = pofile.items.length; i < l; i += 1) {
             res.dic[pofile.items[i].msgid] = pofile.items[i].msgstr[0];
         }
-        this.push(JSON.stringify(res));
+
+        f.contents = new Buffer(JSON.stringify(res));
+        this.push(f);
         cb();
     }
 
