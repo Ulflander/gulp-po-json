@@ -38,6 +38,7 @@ module.exports = function () {
             res.dic[pofile.items[i].msgid] = pofile.items[i].msgstr[0];
         }
 
+        f.path = f.path.replace(/\.po$/gi, '.json');
         f.contents = new Buffer(JSON.stringify(res));
         this.push(f);
         cb();

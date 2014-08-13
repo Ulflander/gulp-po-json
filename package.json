@@ -1,6 +1,6 @@
 {
   "name": "gulp-po-json",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Utility to convert PO files to JSON files with Gulp",
   "main": "index.js",
   "scripts": {
