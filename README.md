@@ -1,6 +1,8 @@
 gulp-po-json
 ============
 
+[![Build Status](https://travis-ci.org/Ulflander/gulp-po-json.svg?branch=master)](https://travis-ci.org/Ulflander/gulp-po-json)
+
 ## Information
 
 <table>
