@@ -9,7 +9,7 @@ module.exports = function () {
 
     function write (f, enc, cb){
         if (f.isNull()) {
-            this.push(file);
+            this.push(f);
             return cb();
         }
 
